@@ -22,9 +22,9 @@ The model of the created widget is Stateless Widget which uses pattern BLoC. May
 
 ## Conclusions
 
+The result of the chosen approach is presented below in the video. Interaction with app in the spirit of the primitive Vikings Style : using touch on the widget's area.
+
 ## Movie
-
-
 
 https://github.com/mk590901/custom_widget_painter/assets/125393245/b82af22e-c8ec-48ef-a709-bae8358c2756
 
