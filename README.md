@@ -4,16 +4,7 @@ The project implements a widget for dynamic visualization of constantly incoming
 
 ## Introduction
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+The number of components for graphical data visualization is relatively small. Especially on flutter. Most of them are in the nature of some standard set of widgets with a lot of options and settings. In essence, they are cloned components of charts built into products like Microsoft Excell or Google Sheets. It is more difficult to find widgets for displaying large amounts of data that are continuously received, for example, from measuring instruments. I decided to create my own widget for this, which is based on a very simple principle.
 
 ## Movie
 
