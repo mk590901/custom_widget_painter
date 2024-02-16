@@ -1,8 +1,8 @@
-# custom_widget_painter
+# Stateless widget for visualization ECG wave
 
-A new Flutter project.
+The project implements a widget for dynamic visualization of constantly incoming ECG data. Widget implements a specific visualization method, which consists in the fact that a newly received piece of data is superimposed on a previously drawn wave.
 
-## Getting Started
+## Introduction
 
 This project is a starting point for a Flutter application.
 
