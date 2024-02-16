@@ -18,6 +18,8 @@ It's clear that a data container into which new elements for drawing are constan
 
 ## Widget type
 
+The model of the created widget is Stateless Widget which uses pattern BLoC. Maybe BLoC is not the best choice in this case.
+
 ## Conclusions
 
 ## Movie
