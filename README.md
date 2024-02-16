@@ -6,6 +6,14 @@ The project implements a widget for dynamic visualization of constantly incoming
 
 The number of components for graphical data visualization is relatively small. Especially on flutter. Most of them are in the nature of some standard set of widgets with a lot of options and settings. In essence, they are cloned components of charts built into products like Microsoft Excell or Google Sheets. It is more difficult to find widgets for displaying large amounts of data that are continuously received, for example, from measuring instruments. I decided to create my own widget for this, which is based on a very simple principle.
 
+## Visualization algorithm
+
+## Data structure
+
+## Widget type
+
+## Conclusions
+
 ## Movie
 
 
