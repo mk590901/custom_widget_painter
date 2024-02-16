@@ -14,7 +14,7 @@ It is this principle that was used in widget.
 
 ## Data structure
 
-It's clear that a data container into which new elements for drawing are constantly being added must be organized in such a way as to minimize the number of shifts in it when adding. For the case of overlaying new images on old ones, a circular (round) buffer is ideal. There are no shifts inside circular buffer needed at all.
+It's clear that a data container into which new elements for drawing are constantly being added must be organized in such a way as to minimize the number of shifts in it when adding. For the case of overlaying new images on old ones, a circular (ring) buffer is ideal: https://en.wikipedia.org/wiki/Circular_buffer. There are no shifts inside circular buffer needed at all.
 
 ## Widget type
 
