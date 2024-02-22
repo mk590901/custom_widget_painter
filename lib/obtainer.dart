@@ -11,18 +11,23 @@ import 'pair_data_object.dart';
 class Obtainer {
 
   final Duration _period;
-  final int _cycles;
-  final ICounterUpdater _counterUpdater;
-  
-  final BuildContext _context;
+  late int _cycles;
+  late ICounterUpdater _counterUpdater;
+  late BuildContext _context;
 
   late Timer? _timer;
 
   int _counter = 1; //  Ok
 
-
-
   Obtainer (this._period, this._cycles, this._context, this._counterUpdater);
+
+  Obtainer.part (this._period);
+
+  void set(int cycles, BuildContext context, ICounterUpdater counterUpdater) {
+    _cycles = cycles;
+    _context = context;
+    _counterUpdater = counterUpdater;
+  }
 
   //@override
   void start(final String uuid) {
