@@ -15,7 +15,6 @@ class CustomWidget extends StatelessWidget implements ICounterUpdater {
   static const int PERIOD = 1000;  // 1s = 1000ms
   static const int samplesNumber = 200;
 
-
   final double width;
   final double height;
 
