@@ -8,7 +8,10 @@ List<int> rowData = [
 
 class StoreWrapper {
 
-  final int _drawSeriesLength;  //  Drawable data size per second
+  final int FREQ = 24;      // frames-per-seconds
+  final int PERIOD = 1000;  // 1s = 1000ms
+
+  late  int _drawSeriesLength;  //  Drawable data size per second
   final int _seriesNumber;      //  Data buffer size
   final int _seriesLength;      //  Number of displayed drawable data pieces
 
@@ -20,7 +23,8 @@ class StoreWrapper {
   late  Path    pathAfter;
   late  Offset  point;
 
-  StoreWrapper(this._seriesLength, this._seriesNumber, this._drawSeriesLength) {
+  StoreWrapper(this._seriesLength, this._seriesNumber) {
+    _drawSeriesLength = (_seriesLength.toDouble()/(PERIOD.toDouble()/FREQ.toDouble())).toInt() + 1;
     buffer_ = CircularBuffer<int>(_seriesLength*_seriesNumber);
   }
 

@@ -11,6 +11,11 @@ import 'package:uuid/uuid.dart';
 
 class CustomWidget extends StatelessWidget implements ICounterUpdater {
 
+  static const int FREQ = 24;      // frames-per-seconds
+  static const int PERIOD = 1000;  // 1s = 1000ms
+  static const int samplesNumber = 200;
+
+
   final double width;
   final double height;
 
@@ -20,10 +25,10 @@ class CustomWidget extends StatelessWidget implements ICounterUpdater {
 
   bool _startStop = false;
 
-  final StoreWrapper storeWrapper = StoreWrapper(200, 5, 6);
+  final StoreWrapper storeWrapper = StoreWrapper(samplesNumber, 5);
 
   final Obtainer
-    obtain = Obtainer.part(const Duration(milliseconds: 24)
+    obtain = Obtainer.part(const Duration(milliseconds: FREQ)
       );
 
   CustomWidget({super.key, required this.width, required this.height});
