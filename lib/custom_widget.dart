@@ -36,10 +36,6 @@ class CustomWidget extends StatelessWidget implements ICounterUpdater {
   @override
   Widget build(BuildContext context) {
 
-    // final Obtainer
-    //   obtain = Obtainer(const Duration(milliseconds: 24),
-    //     storeWrapper.drawingFrequency(), context, this);
-
     obtain.set(storeWrapper.drawingFrequency(), context, this);
 
     return Listener(
